@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gfg News | Single post</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="singlepost.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>GFG News</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i> News Home</a></li>
+                    <li><a href="singlepost.html"><i class="fa fa-pencil-alt"></i> Single Post</a></li>
+                    <li><a href="#"><i class="fa fa-users"></i> About Us</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>GeeksforGeeks (GFG) is a computer science portal that offers a variety of resources for learning and
+                    practicing coding. </p>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Create a New Post</h1>
+            <hr class="hr-line">
+            <form action="#">
+                <div class="form-group">
+                    <label for="postTitle">Post Title:</label>
+
+                    <input type="text" id="postTitle" name="postTitle" placeholder="Enter the title of your post"
+                        required />
+
+                </div>
+
+                <div class="form-group">
+                    <label for="postContent">Post Content:</label>
+
+
+                    <textarea type="text" id="postContent" name="postContent" placeholder="Write your content here..."
+                        required></textarea>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="postImage">Upload Image:</label>
+                    <input type="file" id="postImage" name="postImage" accept="image/*" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="postCategory">Category:</label>
+                    <select id="postCategory" name="postCategory" required multiple>
+                        <option value="Travel">Travel</option>
+                        <option value="Events">Events</option>
+                        <option value="Creative">Creative</option>
+                        <option value="Design">Design</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit Post</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
